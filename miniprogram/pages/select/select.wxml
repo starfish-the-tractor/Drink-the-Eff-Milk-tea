@@ -1,0 +1,37 @@
+<!--pages/select/select.wxml-->
+<!--text>pages/select/select.wxml</text-->
+<view class='selectContainer'>
+  <scroll-view scroll-x>
+    <view wx:for="{{selectTea}}" wx:for-item="item" class="scroll-item" wx:key="key">
+      <view class="scroll-ingredient">
+        <image style="width: 200px; height:100px;" mode="aspectFit" src="{{imageConvert[item.ingredient.name]}}"></image>
+      </view>
+      <view class="scroll-ingredient" wx:for="{{imageConvert[item.cup.name].ingredient}}" wx:for-item="inItem">
+        <image style="width: 200px; height:100px;" mode="aspectFit" src="{{inItem}}"></image>
+      </view>
+      <image style="width: 200px; height:100px;" mode="aspectFit" src="{{imageConvert[item.cup.name].base}}"></image>
+      <view class="scroll-text">
+        <text style="padding-left:15rpx">{{item.cup.name + ' ' + item.cup.size + '\n加料' + item.ingredient.name}}</text>
+      </view>
+      <text>
+        卡路里:{{item.kcal}}
+      </text>
+    <view class='scroll-back' id='{{item.index}}' bindtap='selTea'></view>
+    </view>
+  </scroll-view>
+</view>
+<scroll-view scroll-y class='downContainer'>
+  <view class="weui-cells__title">加料：</view>
+  <view class='btnContainer'>
+    <view wx:for="{{ingredient}}" wx:key="name">
+      <button class='{{"btn" + (item.checked?" sel":"")}}' bindtap='btnIngredientClick' id='{{item.name}}'>{{item.name}}</button>
+    </view>
+  </view>
+  <!---->
+  <view class="weui-cells__title">店铺：</view>
+  <view class='btnContainer'>
+    <view wx:for="{{shops}}" wx:key="name">
+      <button class='{{"btn shop" + (item.checked?" sel":"")}}' bindtap='btnShopClick' id='{{item.name}}'>{{item.name}}</button>
+    </view>
+  </view>
+</scroll-view>

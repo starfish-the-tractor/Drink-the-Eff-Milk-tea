@@ -1,0 +1,13 @@
+/* pages/map/map.wxss */
+.mapContainer{
+  height: 40vh;
+}
+.teaList{
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+}
+
+.teaStoreTitle{
+  margin:10px;
+}

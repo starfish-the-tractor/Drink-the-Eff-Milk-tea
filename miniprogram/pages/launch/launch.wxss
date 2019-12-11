@@ -1,0 +1,15 @@
+/* miniprogram/pages/launch.wxss */
+
+.section__ctn{
+  width: 200px;
+  height: 200px;
+    /*display: table-cell;*/ 
+    /*vertical-align: middle;
+    text-align: center;*/
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}

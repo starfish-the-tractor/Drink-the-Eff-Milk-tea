@@ -1,0 +1,20 @@
+/* pages/evaluate/evaluate.wxss */
+
+
+
+.storeInfoContainer{
+  height: 25vh;
+  width: 100%;
+}
+
+.evaluate{
+  height: 15vh;
+}
+
+.evaluateTextInputContainer{
+  margin-bottom: 2vh;
+  padding: 15rpx;
+  height: 20vh;
+  border: 1rpx solid gainsboro;
+  border-radius: 10px;
+}

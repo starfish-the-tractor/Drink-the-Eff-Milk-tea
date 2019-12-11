@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="teaInfoContainer">
+    <view class="imageContainer">
+      <navigator url="../select/select">
+        <view style="position: absolute;">
+         <image style="width: 200px; height: 200px;" mode="aspectFit" src="{{imageConvert[selectedTea.cup.name].base}}"></image>
+        </view>
+        <view style="position: absolute;" wx:for="{{imageConvert[selectedTea.cup.name].ingredient}}">
+          <image style="width: 200px; height: 200px; text-align: center;" mode="aspectFit" src="{{item}}"></image>
+        </view>
+        <view style="position: absolute;">
+          <image style="width: 200px; height: 200px; text-align: center;" mode="aspectFit" src="{{imageConvert[selectedTea.ingredient.name]}}"></image>
+        </view>
+      </navigator>
+    </view>
+    <view class="cupInfo">
+      <view class="cup">{{selectedTea.cup.name + ' ' + selectedTea.cup.size}}</view>
+      <view class="ingredient">{{'加料 ' + selectedTea.ingredient.name}}</view>
+    </view>
+  </view>
+  <view class="storeInfoContainer">
+      <view class="weui-panel__bd weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{selectedStoreInfo.title}}\n</view>
+            <view class="weui-media-box__desc">{{selectedStoreInfo.address}}\n</view>
+            <view class="weui-media-box__desc">{{selectedStoreInfo._distance}}米</view>
+          </view>
+     </view>
+  </view>
+  <button plain style="color: #C7A99B; border-color: #C7A99B; margin-top:5vh;" class="weui" type="default" plain="true" bindtap='drink'>就喝这杯了</button>
+  <navigator class='mapIcon' url='../map/map'>
+      <image src='../../images/map.png' style='width:120rpx; height:120rpx;'></image>
+  </navigator>
+</view>
+
+

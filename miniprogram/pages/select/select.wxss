@@ -1,0 +1,82 @@
+/* pages/select/select.wxss */
+.selectTea{
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  white-space: nowrap;
+  overflow:hidden;
+  color: gray;
+}
+.scroll-back {
+  width: 52vw;
+  height: 40vh;
+  background: #c7a99b;
+  opacity: 0.1;
+  position: absolute;
+  left: 4vw;
+  top: 0;
+  border-radius: 4px;
+}
+
+.scroll-item{
+  width:60vw;
+  height:100%;
+  display:inline-block;
+  align-items: center;
+  text-align:center;
+  /*border: 1px solid #000;*/
+  position: relative;
+}
+.scroll-ingredient{
+  width:60vw;
+  height:100%;
+  position: absolute;
+}
+.scroll-text{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  text-align:center;
+  justify-content:center;
+}
+
+
+.selectContainer {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow:hidden;
+  /*background: #000;*/
+}
+
+.downContainer {
+  margin: 8px;
+  height: calc(50vh - 16px);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin: 12rpx;
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  /*border: 5rpx solid #f6f6f6;*/
+}
+
+.btn.sel {
+  color: white;
+  background-color: #c7a99b;
+}
+
+.shop {
+  width: 700rpx;
+}

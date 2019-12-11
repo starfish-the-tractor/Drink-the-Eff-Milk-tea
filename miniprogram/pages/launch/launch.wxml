@@ -1,0 +1,26 @@
+<!--miniprogram/pages/launch.wxml-->
+<view class="center">
+      <text mode="aspectFit">正在准备奶茶...</text>
+</view>
+<view class="center">
+  <view class="section__ctn" wx:for-item="item" style="position: relative;">
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px;" mode="aspectFit" src="../../images/milktea/Matcha.png"></image>
+    </view>
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px; text-align: center;" mode="aspectFit" src="../../images/milktea/boba.png"></image>
+    </view>
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px;" mode="aspectFit" src="../../images/milktea/milkcover.png"></image>
+    </view>
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px;" mode="aspectFit" src="../../images/milktea/icecream.png"></image>
+    </view>
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px;" mode="aspectFit" src="../../images/milktea/coconut.png"></image>
+    </view>
+    <view style="position: absolute;">
+      <image style="width: 200px; height: 200px;" mode="aspectFit" src="../../images/milktea/xiancao.png"></image>
+    </view>
+  </view>
+</view>

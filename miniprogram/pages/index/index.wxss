@@ -1,0 +1,27 @@
+/* pages/index/index.wxss */
+.imageContainer{
+  width: 200px;
+  height: 200px;
+    /*display: table-cell;*/ 
+    /*vertical-align: middle;
+    text-align: center;*/
+}
+
+.teaInfoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  margin-top: 5vh;
+}
+
+.storeInfoContainer{
+  width:60%;
+  margin-left:20vw;
+  margin-top:2vh;
+}
+
+.mapIcon{
+  position: absolute;
+  right: 5vw;
+  top:2vh;
+}

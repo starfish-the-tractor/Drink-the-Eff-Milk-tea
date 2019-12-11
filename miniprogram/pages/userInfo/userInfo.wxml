@@ -1,0 +1,18 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="userinfo">
+  <view class="userinfo-avatar">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+    <open-data type="userNickName"></open-data>
+</view>
+<view class="chart-area">
+  <view class='container'>
+      <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart='touchHandler'></canvas>
+  </view>
+</view>
+<view class="button-sp-area">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <button plain style="color: #C7A99B; border-color: #C7A99B;" class="weui" type="default" plain="true">每日热量上限设置</button>
+    </picker>
+</view>
+
